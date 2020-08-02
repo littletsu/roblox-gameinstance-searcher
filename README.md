@@ -29,4 +29,9 @@ Found user on an instance with GUID e70b7207-a49d-4b18-a0db-f99639d10a1d, join s
 * If not, open the developer tools and execute the join script from there.
 
 # Limit
+
+## Game Instances
 There is a limit of 125 max instances that the program can go through, this is because after this number the Roblox API will no longer give more game instances even if there are more. So the program will work as long as there are less than 125 game instances in the place.
+
+## Players
+If a player in a game instance has the same avatar as the requested user, there is no way to determine if the user is correct, so there may be more than one place found.
