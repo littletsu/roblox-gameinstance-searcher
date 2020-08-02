@@ -18,5 +18,15 @@ node searchUsernameInGameInstance [username] [placeId] [maxGameInstances] "[logi
 `[loginCookie]` - .ROBLOSECURITY cookie. It will not be stored anywhere and is just required to be able to use the roblox API<br>
 `[debug] (Default: none)` - If specified, the program will log debug information.
 
+# Join the found game
+If the program was able to find a game, it should look something like this in the console: 
+```
+Found user on an instance with GUID e70b7207-a49d-4b18-a0db-f99639d10a1d, join script: Roblox.GameLauncher.joinGameInstance(4314032456, "e70b7207-a49d-4b18-a0db-f99639d10a1d")
+```
+* To join, copy the join script (`Roblox.GameLauncher.joinGameInstance(4314032456, "e70b7207-a49d-4b18-a0db-f99639d10a1d")` in this case) 
+* Go to the place page in roblox
+* If supported in your browser, type in the search bar (with the place page focused): `javascript:theJoinScript`, example: `javascript:Roblox.GameLauncher.joinGameInstance(4314032456, "e70b7207-a49d-4b18-a0db-f99639d10a1d")`
+* If not, open the developer tools and execute the join script from there.
+
 # Limit
 There is a limit of 125 max instances that the program can go through, this is because after this number the Roblox API will no longer give more game instances even if there are more. So the program will work as long as there are less than 125 game instances in the place.
