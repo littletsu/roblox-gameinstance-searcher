@@ -9,7 +9,7 @@ It gets the thumbnail of the requested user, goes through the game instances of 
 * Install the npm packages: `npm install`
 * Run the program with the required args:
 ```sh
-node index [username] [placeId] [maxGameInstances] "[loginCookie]" [debug] 
+node searchUsernameInGameInstance [username] [placeId] [maxGameInstances] "[loginCookie]" [debug] 
 ```
 
 `[username]` - Replace with the name of the player you are looking for<br>
